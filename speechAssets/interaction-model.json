@@ -1,65 +1,65 @@
 {
-  "intents": [
+  intents: [
     {
-      "name": "AMAZON.CancelIntent",
-      "samples": []
+      name: AMAZON.CancelIntent,
+      samples: []
     },
     {
-      "name": "AMAZON.HelpIntent",
-      "samples": []
+      name: AMAZON.HelpIntent,
+      samples: []
     },
     {
-      "name": "AMAZON.NoIntent",
-      "samples": []
+      name: AMAZON.NoIntent,
+      samples: []
     },
     {
-      "name": "AMAZON.RepeatIntent",
-      "samples": []
+      name: AMAZON.RepeatIntent,
+      samples: []
     },
     {
-      "name": "AMAZON.StartOverIntent",
-      "samples": [
-        "start game",
-        "new game",
-        "start",
-        "start new game"
+      name: AMAZON.StartOverIntent,
+      samples: [
+        start game,
+        new game,
+        start,
+        start new game
       ]
     },
     {
-      "name": "AMAZON.StopIntent",
-      "samples": []
+      name: AMAZON.StopIntent,
+      samples: []
     },
     {
-      "name": "AMAZON.YesIntent",
-      "samples": []
+      name: AMAZON.YesIntent,
+      samples: []
     },
     {
-      "name": "AnswerIntent",
-      "samples": [
-        "the answer is {Answer}",
-        "my answer is {Answer}",
-        "is it {Answer}",
-        "{Answer} is my answer",
-        "{Answer}"
+      name: AnswerIntent,
+      samples: [
+        the answer is {Answer},
+        my answer is {Answer},
+        is it {Answer},
+        {Answer} is my answer,
+        {Answer}
       ],
-      "slots": [
+      slots: [
         {
-          "name": "Answer",
-          "type": "AMAZON.NUMBER",
-          "samples": []
+          name: Answer,
+          type: AMAZON.NUMBER,
+          samples: []
         }
       ]
     },
     {
-      "name": "DontKnowIntent",
-      "samples": [
-        "i don't know",
-        "don't know",
-        "skip",
-        "i don't know that",
+      name: DontKnowIntent,
+      samples: [
+        i dont know",
+        "dont know,
+        skip,
+        i dont know that",
         "who knows",
-        "i don't know this question",
-        "i don't know that one",
+        "i dont know this question,
+        i dont know that one",
         "dunno"
       ],
       "slots": []
@@ -67,15 +67,51 @@
     {
       "name": "GetCouloumbIntent",
       "samples": [
-        "Couloumb's constant",
-        "Couloumb's law constant",
+        "Couloumbs constant,
+        Couloumbs law constant",
         "value of k",
-        "tell me Couloumb's constant",
-        "tell me Couloumb's law constant",
+        "tell me Couloumbs constant,
+        tell me Couloumbs law constant",
         "tell me the value of k",
-        "give me Couloumb's constant",
-        "give me Couloumb's law constant",
+        "give me Couloumbs constant,
+        give me Couloumbs law constant",
         "give me the value of k"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetElementaryIntent",
+      "samples": [
+        "proton charge",
+        "proton electric charge",
+        "a protons charge,
+        a protons electric charge",
+        "charge of a proton",
+        "charge of protons",
+        "electric charge of a proton",
+        "electric charge of protons",
+        "elementary charge",
+        "elementary electric charge",
+        "tell me the proton charge",
+        "tell me the proton electric charge",
+        "tell me a protons charge,
+        tell me a protons electric charge",
+        "tell me the charge of a proton",
+        "tell me the charge of protons",
+        "tell me the electric charge of a proton",
+        "tell me the electric charge of protons",
+        "tell me the elementary charge",
+        "tell me the elementary electric charge",
+        "give me the proton charge",
+        "give me the proton electric charge",
+        "give me a protons charge,
+        give me a protons electric charge",
+        "give me the charge of a proton",
+        "give me the charge of protons",
+        "give me the electric charge of a proton",
+        "give me the electric charge of protons",
+        "give me the elementary charge",
+        "give me the elementary electric charge"
       ],
       "slots": []
     },
@@ -84,22 +120,22 @@
       "samples": [
         "electron mass",
         "electron rest mass",
-        "an electron's mass",
-        "an electron's rest mass",
+        "an electrons mass,
+        an electrons rest mass",
         "mass of an electron",
         "mass of electrons",
         "tell me the electron mass",
         "tell me the electron rest mass",
-        "tell me an electron's mass",
-        "tell me an electron's rest mass",
+        "tell me an electrons mass,
+        tell me an electrons rest mass",
         "tell me the mass of an electron",
         "tell me the mass of electrons",
         "tell me the rest mass of an electron",
         "tell me the rest mass of electrons",
         "give me the electron mass",
         "give me the electron rest mass",
-        "give me an electron's mass",
-        "give me an electron's rest mass",
+        "give me an electrons mass,
+        give me an electrons rest mass",
         "give me the mass of an electron",
         "give me the mass of electrons",
         "give me the rest mass of an electron",
@@ -112,53 +148,53 @@
       "samples": [
         "gravitational constant",
         "universal gravitational constant",
-        "Newton's constant",
-        "value of G",
-        "tell me the gravitational constant",
-        "tell me the universal gravitational constant",
-        "tell me Newton's constant",
+        "Newtons constant,
+        value of G,
+        tell me the gravitational constant,
+        tell me the universal gravitational constant,
+        tell me Newtons constant",
         "tell me the value of G",
         "give me the gravitational constant",
         "give me the universal gravitational constant",
-        "give me Newton's constant",
-        "give me the value of G"
+        "give me Newtons constant,
+        give me the value of G
       ],
-      "slots": []
+      slots: []
     },
     {
-      "name": "GetPermittivityIntent",
-      "samples": [
-        "electric constant",
-        "permittivity of free space",
-        "permittivity in free space",
-        "permittivity of empty space",
-        "permittivity in empty space",
-        "permittivity of a vacuum",
-        "permittivity in a vacuum",
-        "free space permittivity",
-        "vacuum permittivity",
-        "tell me the electric constant",
-        "tell me the permittivity of free space",
-        "tell me the permittivity in free space",
-        "tell me the permittivity of empty space",
-        "tell me the permittivity in empty space",
-        "tell me the permittivity of a vacuum",
-        "tell me the permittivity in a vacuum",
-        "tell me the value of the electric constant",
-        "tell me the value of free space permittivity",
-        "tell me the value of vacuum permittivity",
-        "give me the electric constant",
-        "give me the permittivity of free space",
-        "give me the permittivity in free space",
-        "give me the permittivity of empty space",
-        "give me the permittivity in empty space",
-        "give me the permittivity of a vacuum",
-        "give me the permittivity in a vacuum",
-        "give me the value of free space permittivity",
-        "give me the value of vacuum permittivity",
-        "give me the value of the electric constant"
+      name: GetPermittivityIntent,
+      samples: [
+        electric constant,
+        permittivity of free space,
+        permittivity in free space,
+        permittivity of empty space,
+        permittivity in empty space,
+        permittivity of a vacuum,
+        permittivity in a vacuum,
+        free space permittivity,
+        vacuum permittivity,
+        tell me the electric constant,
+        tell me the permittivity of free space,
+        tell me the permittivity in free space,
+        tell me the permittivity of empty space,
+        tell me the permittivity in empty space,
+        tell me the permittivity of a vacuum,
+        tell me the permittivity in a vacuum,
+        tell me the value of the electric constant,
+        tell me the value of free space permittivity,
+        tell me the value of vacuum permittivity,
+        give me the electric constant,
+        give me the permittivity of free space,
+        give me the permittivity in free space,
+        give me the permittivity of empty space,
+        give me the permittivity in empty space,
+        give me the permittivity of a vacuum,
+        give me the permittivity in a vacuum,
+        give me the value of free space permittivity,
+        give me the value of vacuum permittivity,
+        give me the value of the electric constant
       ],
-      "slots": []
+      slots: []
     }
   ]
 }
