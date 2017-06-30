@@ -5,7 +5,7 @@ var Alexa = require('alexa-sdk');
 //Make sure to enclose your value in quotes, like this: var APP_ID = "amzn1.ask.skill.bb4045e6-b3e8-4133-b650-72923c5980f1";
 var APP_ID = "amzn1.ask.skill.f774ba56-d408-4c12-881e-9d7412ef89d0";
 
-var SKILL_NAME = "Physics Constants";
+var SKILL_NAME = "Simple Physics";
 var HELP_MESSAGE = "You can say tell me a physics constant, for example, Newton's constant or the permittivity of free space. You can also say exit... What can I help you with?";
 var HELP_REPROMPT = "What can I help you with?";
 var STOP_MESSAGE = "Goodbye!";
@@ -31,6 +31,7 @@ var handlers = {
         var repromptOutput = "What constant would you like to know?";
         this.emit(":ask", speechOutput, repromptOutput);
     },
+    
     'GetCouloumbIntent': function () {
         var factArr = data;
         var value = factArr['couloumb'];
@@ -71,5 +72,12 @@ var handlers = {
     },
     'AMAZON.StopIntent': function () {
         this.emit(':tell', STOP_MESSAGE);
+    },
+    'SessionEndedRequest': function () {
+        console.log('session ended!');
+        this.emit(':tell', STOP_MESSAGE);
+    },
+    'Unhandled': function() {
+        this.emit(':ask', 'Sorry, I didn\'t get that. Try saying a physics constant.', 'Try saying a physics constant.');
     }
 };
